@@ -1,7 +1,7 @@
 ﻿/*********************************************************************************
  * Programación 1. Práctica 4
  * Autores: Miguel Ángel Latre
- * Ultima revisión: 6 de noviembre de 2019
+ * Ultima revisión: 13 de noviembre de 2019
  * Resumen: Programa de pruebas del módulo «naturales-grandes» de la 4.ª práctica.
  * Codificación de caracteres original de este fichero: UTF-8 con BOM
 \********************************************************************************/
