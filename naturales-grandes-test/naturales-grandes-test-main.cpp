@@ -42,8 +42,8 @@ int main() {
     probarSumar("189", "021", "210");
     probarSumar("9999", "01", "10000");
     // De más de 20 dígitos (no representables como int ni como long long)
-    probarSumar("12345678901234567890", "10", "12345678901234567900");
-    probarSumar("99999999999999999999", "1", "100000000000000000000");
+    probarSumar("123412345678901234567890", "10", "123412345678901234567900");
+    probarSumar("999999999999999999999999", "1", "1000000000000000000000000");
 
     probarValor("0", 0);
     probarValor("7", 7);
@@ -57,13 +57,11 @@ int main() {
     probarCalcularImagen("1", "1");
     probarCalcularImagen("18", "81");
     probarCalcularImagen("903", "309");
-    probarCalcularImagen("0903", "309");
     probarCalcularImagen("123456789", "987654321");
     probarCalcularImagen("1030507090", "907050301");
-    probarCalcularImagen("12345678901234567890", "9876543210987654321");
+    probarCalcularImagen("123412345678901234567890", "98765432109876543214321");
 
     probarEsCapicua("0", true);
-    probarEsCapicua("000", true);
     probarEsCapicua("1", true);
     probarEsCapicua("10", false);
     probarEsCapicua("11", true);
@@ -71,10 +69,8 @@ int main() {
     probarEsCapicua("101", true);
     probarEsCapicua("91718", false);
     probarEsCapicua("91719", true);
-    probarEsCapicua("091718", false);
-    probarEsCapicua("091719", true);
-    probarEsCapicua("1234567890123456789", false);
-    probarEsCapicua("1234567890987654321", true);
+    probarEsCapicua("12341234567890123456789", false);
+    probarEsCapicua("123412345678909876543214321", true);
 
     return 0;
 }
