@@ -11,7 +11,7 @@
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
-#include "../naturales-grandes.h"
+#include "naturales-grandes.h"
 using namespace std;
 
 /**************************************************************************
