@@ -79,7 +79,7 @@ void probarSumar(const char a[], const char b[], const char valorEsperado[]) {
 void probarValor(const char numero[], const int valorEsperado) {
    cout << "Prueba valor(\"" << numero << "\") ";
    int valorDevuelto = valor(numero);
-   escribirResultadoPrueba(valorDevuelto, valorEsperado);
+   escribirResultadoPrueba(valorEsperado, valorDevuelto);
 }
 
 
@@ -159,8 +159,8 @@ void escribirResultadoPrueba(const int valorEsperado, const int valorCalculado) 
     else {
         cout << "incorrecta:" << endl;
         cout << ESCAPE_ROJO;
-        cout << "   debería haber calculado " << valorEsperado
-             << " pero ha calculado " << valorCalculado << '.' << endl;
+        cout << "   debería haber devuelto " << valorEsperado
+             << " pero ha devuelto " << valorCalculado << '.' << endl;
         cout << ESCAPE_NORMAL;
     }
 }
@@ -181,8 +181,8 @@ void escribirResultadoPrueba(const bool valorEsperado, const bool valorCalculado
     else {
         cout << "incorrecta:" << endl;
         cout << ESCAPE_ROJO << boolalpha;
-        cout << "   debería haber calculado " << ESCAPE_ROJO_NEGRITA 
-             << valorEsperado << ESCAPE_ROJO << " pero ha calculado "
+        cout << "   debería haber devuelto " << ESCAPE_ROJO_NEGRITA 
+             << valorEsperado << ESCAPE_ROJO << " pero ha devuelto "
              << ESCAPE_ROJO_NEGRITA << valorCalculado << ESCAPE_ROJO << '.' 
              << endl;
         cout << ESCAPE_NORMAL;
