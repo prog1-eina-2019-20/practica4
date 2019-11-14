@@ -36,7 +36,7 @@ int valor(const char sec[]) {
 
 
 /*
- * Pre:  «a» y «b» almacenan sendas cadenas de caracteres con la secuencias
+ * Pre:  «a» y «b» almacenan sendas cadenas de caracteres con las secuencias
  *       de dígitos de dos números naturales. Sea «n» el número de dígitos de «a»
  *       y «m» el número de dígitos de «b». Los caracteres a[n-1] y b[m-1]
  *       representan las unidades, los caracteres a[n-2] y b[m-2] las
