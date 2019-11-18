@@ -25,25 +25,41 @@ int main() {
     // Elemento neutro
     probarSumar("0", "0", "0");
     probarSumar("00", "000", "0");
+    probarSumar("000", "00", "0");
     probarSumar("132", "0", "132");
+    probarSumar("0", "132", "132");
     probarSumar("0", "335", "335");
+    probarSumar("335", "0", "335");
     // Sumas sin llevar
     probarSumar("802", "100", "902");
+    probarSumar("100", "802", "902");
     probarSumar("802", "10", "812");
+    probarSumar("10", "802", "812");
     // Ceros a la izquierda en las entradas
     probarSumar("00802", "100", "902");
+    probarSumar("100", "00802", "902");
     probarSumar("802", "0010", "812");
+    probarSumar("0010", "802", "812");
     // Con accarreo
+    probarSumar("8", "8", "16");
     probarSumar("189", "21", "210");
+    probarSumar("21", "189", "210");
     probarSumar("9999", "1", "10000");
+    probarSumar("1", "9999", "10000");
     // Con accarreo y ceros a la izquierda en las entradas
     probarSumar("0189", "21", "210");
+    probarSumar("21", "0189", "210");
     probarSumar("09999", "1", "10000");
+    probarSumar("1", "09999", "10000");
     probarSumar("189", "021", "210");
+    probarSumar("021", "189", "210");
     probarSumar("9999", "01", "10000");
+    probarSumar("01", "9999", "10000");
     // De más de 20 dígitos (no representables como int ni como long long)
     probarSumar("123412345678901234567890", "10", "123412345678901234567900");
+    probarSumar("10", "123412345678901234567890", "123412345678901234567900");
     probarSumar("999999999999999999999999", "1", "1000000000000000000000000");
+    probarSumar("1", "999999999999999999999999", "1000000000000000000000000");
 
     probarValor("0", 0);
     probarValor("7", 7);
